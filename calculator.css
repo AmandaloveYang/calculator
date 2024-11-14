@@ -20,15 +20,21 @@ body {
 .screen {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 20px;
-  background-color: #fff;
-  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.history {
+  min-height: 20px;
+  font-size: 0.8em;
+  color: #666;
+  text-align: right;
 }
 
 .output {
-  font-size: 36px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
 }
 
 .calculator__keys {

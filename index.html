@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
     <title>计算器</title>
-
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 
 <body>
     <div class="calculator">
         <div class="screen">
-            <div class="output"></div>
+            <div class="history" id="history"></div>
+            <div class="output" id="output"></div>
         </div>
         <div class="calculator__keys">
-            <button class="clear" data-action="clear">C</button>
+            <button class="clear" data-action="clear">AC</button>
+            <button class="operator" data-action="plusminus">±</button>
+            <button class="operator" data-action="percentage">%</button>
             <button class="operator" data-action="divide">÷</button>
             <button class="number">7</button>
             <button class="number">8</button>
@@ -32,7 +35,7 @@
             <button class="number">3</button>
             <button class="operator" data-action="add">+</button>
             <button class="number">0</button>
-            <button class="number" data-action="decimal">.</button>
+            <button class="decimal" data-action="decimal">.</button>
             <button class="equal" data-action="calculate">=</button>
         </div>
     </div>
